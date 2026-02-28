@@ -3,6 +3,8 @@
 
 [![Demo Video](https://img.shields.io/badge/Watch-2_Minute_Demo-red?style=for-the-badge&logo=youtube)](#) *(Insert link to your video here)*
 
+[![]]
+
 ## 🛑 The Problem: LLMs Are Gullible
 Product managers and analysts drown in unstructured qualitative data (support tickets, app reviews). While LLMs are excellent at extracting sentiment from this noise, they lack operational skepticism. If a bot network submits 1,000 synthetic reviews complaining about a "crypto transfer fee," a standard LLM pipeline will dutifully extract that data, poison the analytics dashboard, and trigger a false product crisis. 
 
@@ -10,7 +12,7 @@ Product managers and analysts drown in unstructured qualitative data (support ti
 The UFI Pipeline doesn't just extract data; it evaluates the linguistic fingerprint of the input first. Built entirely on a **locally-hosted, privacy-first LLM** (Llama 3.2), the system processes unstructured text, scores its authenticity, and executes a routing fork. Valid data updates the main strategic dashboard, while suspected synthetic data is shunted into a Quarantine database for human audit.
 
 ## 🧠 System Architecture
-1. **Ingestion:** Reads raw, messy user feedback (CSV).
+1. **Ingestion:** Reads raw, messy user feedback (CSV). *Note: This MVP uses the [Kaggle Fake Reviews Dataset](https://www.kaggle.com/datasets/mexwell/fake-reviews-dataset) to rigorously test the pipeline against a 50/50 split of verified human ("OR") and computer-generated ("CG") text.*
 2. **Local Inference (Ollama/Llama 3.2):** Bypasses external cloud APIs to maintain strict zero-PII fintech compliance. Uses Few-Shot Prompting and strict JSON enforcement to extract:
    * `TL;DR`: A 3-to-6 word summary.
    * `Entity`: Hardcoded entity resolution (e.g., "Authentication/Login", "App Performance").
