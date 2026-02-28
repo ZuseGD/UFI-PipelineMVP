@@ -1,8 +1,8 @@
-```text
+
 feedback_intelligence.db
 __pycache__/
 *.pyc
 .env
 venv/
 env/
-.conda/
+.conda
