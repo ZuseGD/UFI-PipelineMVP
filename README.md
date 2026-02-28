@@ -1,9 +1,7 @@
 # Unstructured Feedback Intelligence (UFI) Pipeline
 **An AI-native system for parsing qualitative data, preventing data poisoning, and keeping humans in control.**
 
-[![Demo Video](https://img.shields.io/badge/Watch-2_Minute_Demo-red?style=for-the-badge&logo=youtube)](#) *(Insert link to your video here)*
-
-[![]]
+[![Demo Video](https://img.shields.io/badge/Watch-2_Minute_Demo-red?style=for-the-badge&logo=youtube)](#) *(https://www.youtube.com/@ZuseTheGoose)*
 
 ## 🛑 The Problem: LLMs Are Gullible
 Product managers and analysts drown in unstructured qualitative data (support tickets, app reviews). While LLMs are excellent at extracting sentiment from this noise, they lack operational skepticism. If a bot network submits 1,000 synthetic reviews complaining about a "crypto transfer fee," a standard LLM pipeline will dutifully extract that data, poison the analytics dashboard, and trigger a false product crisis. 
