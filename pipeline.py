@@ -42,7 +42,7 @@ def process_reviews(conn):
     print("Loading Dataset and connecting to local offline pipeline...")
     
     # Load dataset
-    df = pd.read_csv('data.csv')
+    df = pd.read_csv('fake reviews dataset.csv')
     
     # Check column names 
     text_col = 'raw_text' if 'raw_text' in df.columns else 'text_'
