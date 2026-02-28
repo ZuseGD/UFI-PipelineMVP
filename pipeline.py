@@ -72,14 +72,13 @@ def process_reviews(conn):
     
     Rules for 'entity' (ENTITY RESOLUTION):
     You MUST categorize the core subject into ONE of these exact broad categories. Do not invent your own.
-    - "Authentication/Login" (for face ID, passwords, login issues)
-    - "App Performance/UI" (for lag, crashes, dark mode, design, "the app")
-    - "Customer Support" (for wait times, chat bots)
-    - "Transactions/Transfers" (for sending money, deposits, delays)
-    - "Account Management" (for tax forms, linking accounts, settings)
-    - "Irrelevant/Spam" (for fake reviews, crypto scams, gaming references)
-    - "Other" (only if it absolutely does not fit above)
-
+   - "Home & Kitchen" (pillows, lunchboxes, appliances, furniture)
+    - "Clothing & Accessories" (shoes, sandals, watches, bags)
+    - "Media & Entertainment" (movies, books, games)
+    - "Pet Supplies" (dog food, pet toys, pet filters)
+    - "Tools & Outdoors" (cutting blades, scopes, sleeping bags, hardware)
+    - "Irrelevant/Spam" (for fake reviews, generic bot text, or gibberish)
+    - "Other Product" (only if it absolutely does not fit above)
     JSON Schema:
     {
         "authenticity_score": int,
